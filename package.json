@@ -1,0 +1,32 @@
+{
+  "name": "ne-zha-sliding-puzzle",
+  "version": "1.0.0",
+  "description": "A sliding puzzle game featuring characters from the movie 'Ne Zha'.",
+  "main": "src/main.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "sync:android": "npm run build && npx cap sync android",
+    "apk:debug": "npm run sync:android && ./android/gradlew -p android assembleDebug",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "typescript": "^4.5.4",
+    "vite": "^2.6.4",
+    "@capacitor/core": "^6.2.0",
+    "@capacitor/android": "^6.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "@capacitor/cli": "^6.2.0"
+  },
+  "keywords": [
+    "sliding puzzle",
+    "ne zha",
+    "game",
+    "typescript"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
